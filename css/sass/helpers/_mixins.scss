@@ -1,0 +1,16 @@
+/*mixin overlay*/
+@mixin overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:100%;
+    height: 100%;}
+
+
+/*prefixes mixin*/
+@mixin prefixer ($property , $value , $prefixes: (/*the four prefixes*/) ){
+ @each $prefix in $prefixes{
+     #{'-'+ $prefix +'-'+$property} : $value;
+ } 
+  #{$property} : $value;
+}  

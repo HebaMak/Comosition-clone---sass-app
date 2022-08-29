@@ -1,0 +1,144 @@
+.footer {
+    background-color: #e2e2e2;
+    padding-top: 30px;
+    margin-top: 50px;
+    overflow: hidden; 
+    .gallery , .info , .contact {
+        float: $float-left;
+    } 
+    .gallery {
+        @media #{$minSmall} {
+            width: 100%;
+            h3 {
+                text-align: $text-left;
+            }
+        }
+        @media #{$minMedium} {
+            width: 50%;
+            h3 {
+                text-align: $text-left;
+            }
+        }
+        @media #{$minLarge} {
+            h3 {
+            text-align: $text-left;
+        }
+        }
+        
+        .img-box {
+            overflow: hidden;
+            margin-bottom: 20px;
+           img {
+               @media #{$minSmall} {
+                   float: $float-left;
+               }
+            width: 150px;
+            height: 150px;
+            border: 1px solid #888;
+            padding: 5px;
+           } 
+           .text {
+            @media #{$minSmall} {
+                float: $float-left;
+                margin-right: 15px;
+                margin-left: 15px;
+                width: calc(100% - 180px);
+            }
+               h4 {
+                   color: $redColor;
+                   margin: 15px 0 ;
+               }
+               p {
+                   color: #888;
+                   line-height: 1.8;
+               }
+           }
+        }
+    }
+    .info {
+        @media #{$maxMobile} {
+            position: relative;
+            left: 50%;
+            transform:translateX(-50%);
+            text-align: center;
+        }
+        @media #{$minSmall} {
+            width: 50%;
+        }
+        @media #{$minMedium} {
+            width: 25%;
+        }
+        ul {
+            color: #888;
+            line-height: 1.9;
+            span {
+                color: $redColor;
+            }
+        }
+        h4 {
+            color: #888;
+            font-weight: bold;
+            margin-bottom: 0;
+            margin-top: 30px;
+        }
+        p {
+            color: #888;
+            margin-top: 15px;
+        }
+    }
+    .contact {
+        h3 {
+            @media #{$maxMobile} {
+                text-align: center;
+            }
+        }
+        @media #{$maxMobile} {
+            margin-top: 20px;
+        }
+        @media #{$minSmall} {
+            width: 50%;
+        }
+        @media #{$minMedium} {
+            width: 25%;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            border: 1px solid #c9c9c9;
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 10px;
+            width: 100%;
+        }
+        textarea {
+            height: 120px;
+        }
+    }
+    .section-title {
+        color: #444;
+        font-weight: normal;
+    }
+    .copyright {
+        overflow: hidden;
+        border-top: 1px solid #c5c5c5;
+        padding: 15px 0;
+        color: #888;
+        .text {
+            text-align: center;
+            margin-bottom:20px;
+            @media #{$minSmall} {
+                float: $float-left;
+                width: 50%;
+                text-align: $text-left;
+            }
+        }
+        .author {
+            text-align: center;
+            @media #{$minSmall} {
+                float: $float-left;
+                width: 50%;
+                text-align: $text-right;
+            }
+        }
+    }
+}

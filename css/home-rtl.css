@@ -1,0 +1,117 @@
+/*media query*/
+/*colors*/
+/*directions*/
+/* start header */
+.header .logo {
+  float: right; }
+  @media (max-width: 767px) {
+    .header .logo {
+      text-align: right; } }
+  @media (min-width: 992px) {
+    .header .logo {
+      text-align: right;
+      float: right; } }
+.header .navbar {
+  float: right; }
+  @media (min-width: 992px) {
+    .header .navbar {
+      float: right; } }
+  .header .navbar li {
+    float: right; }
+    @media (max-width: 767px) {
+      .header .navbar li {
+        text-align: right; } }
+
+.the-toggler {
+  left: 15px; }
+
+/* end header */
+/* start services */
+@media (min-width: 992px) {
+  .services .service-box {
+    float: right; } }
+
+/* end services */
+/* start players */
+@media (max-width: 991px) {
+  .our-players .players-box {
+    margin-bottom: 40px; } }
+@media (min-width: 768px) {
+  .our-players .players-box {
+    float: right; } }
+@media (min-width: 992px) {
+  .our-players .players-box {
+    text-align: right; } }
+
+/* end players */
+/* start lorum ipsum */
+.lorum-ipsum .lorum-box {
+  float: right;
+  width: 31.3333333333%; }
+  .lorum-ipsum .lorum-box:not(:last-of-type) {
+    margin-right: 0%;
+    margin-left: 3%; }
+  @media (max-width: 767px) {
+    .lorum-ipsum .lorum-box {
+      width: 100%; } }
+  @media (min-width: 768px) {
+    .lorum-ipsum .lorum-box {
+      width: 94%; } }
+  @media (min-width: 992px) {
+    .lorum-ipsum .lorum-box {
+      width: 47%; }
+      .lorum-ipsum .lorum-box:last-child {
+        right: 50%;
+        transform: translateX(50%); } }
+  @media (min-width: 1200px) {
+    .lorum-ipsum .lorum-box {
+      width: 31.3333333333%; }
+      .lorum-ipsum .lorum-box:last-child {
+        right: 15.5%; } }
+.lorum-ipsum .lorum-img {
+  max-width: 100%; }
+
+/* end lorum ipsum */
+/* start footer */
+.footer .gallery, .footer .info, .footer .contact {
+  float: right; }
+@media (min-width: 768px) {
+  .footer .gallery h3 {
+    text-align: right; } }
+@media (min-width: 992px) {
+  .footer .gallery h3 {
+    text-align: right; } }
+@media (min-width: 1200px) {
+  .footer .gallery h3 {
+    text-align: right; } }
+@media (min-width: 768px) {
+  .footer .gallery .img-box img {
+    float: right; } }
+@media (min-width: 768px) {
+  .footer .gallery .img-box .text {
+    float: right; } }
+@media (max-width: 767px) {
+  .footer .info {
+    right: 50%;
+    transform: translateX(50%); } }
+@media (max-width: 767px) {
+  .footer .contact .main-btn {
+    right: 50%;
+    transform: translateX(50%); } }
+.footer .copyright {
+  overflow: hidden;
+  border-top: 1px solid #c5c5c5;
+  padding: 15px 0;
+  color: #888; }
+  @media (min-width: 768px) {
+    .footer .copyright .text {
+      float: right;
+      text-align: right; } }
+  @media (min-width: 768px) {
+    .footer .copyright .author {
+      float: right;
+      text-align: left; } }
+
+/* end footer */
+
+/*# sourceMappingURL=home-rtl.css.map */

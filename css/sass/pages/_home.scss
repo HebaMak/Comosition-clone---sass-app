@@ -1,0 +1,173 @@
+/* start slider */
+.slider {
+    q {
+        font: {
+            family: Tahoma , Arial;
+            weight: 600;
+            style: italic;
+            size : 20px;
+        }
+        line-height: 1.7;
+        text-align: center;
+        color: $grayColor;
+        width: 80%;
+        margin :30px auto;
+        display: block;
+    }
+
+    img {
+        max-width:100%;
+    }
+
+    .bullets {
+        text-align: center;
+        li {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius:50%;
+            background-color: $grayColor;
+            border: 2px solid $grayColor;
+            cursor: pointer;
+            @include prefixer(transition , all .5s ease-in-out , webkit moz o);
+            &.active ,
+            &:hover{
+                background-color: transparent;
+                border: 2px solid #333;
+            }
+        }
+    }
+}
+/* end slider */
+
+/* start services */
+.services {
+    .service-box {
+        @media #{$minMedium}{
+            float: $float-left;
+            width:(100%/3);
+            &:not(:last-of-type) {
+                padding-right:10px;
+            }
+        }
+        @media #{$maxMobile} {
+            i {
+                display: block;
+                margin-bottom: 15px;
+            }
+        }
+        .service-title {
+            color:#333;
+            i {
+                font-size: 35px;
+                position: relative;
+                top: 4px;
+            }
+        }
+        .service-desc {
+            color:#777;
+            line-height: 1.5;
+        }
+        .link {
+            color:$redColor;
+            text-decoration: none;
+        }
+    }
+}
+/* end services */
+
+/* start players */
+.our-players {
+    .players-box {
+        @media #{$maxSmall} {
+            margin-bottom: 40px;
+        }
+        @media #{$minSmall} {
+            float: $float-left;
+            width: (100% / 2);
+            margin-bottom: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @media #{$minMedium} {
+            width: (100% / 3 );
+            margin-bottom: 40px;
+            text-align: $text-left;
+        }
+        @media #{$minLarge} {
+            width: (100% / 5);
+            margin-bottom: 0;
+        }
+        .player-img {
+            max-width: 100%;
+            }
+        .players-title {
+            color:#333;
+            font-weight: normal;
+            span{
+               font-weight: bold;
+            }
+        }
+        .players-desc {
+            color:#777;
+            line-height: 1.5;
+        }
+        .link {
+            color:$redColor;
+            text-decoration: none;
+        }
+    }
+}
+/* end players */
+
+/* start lorum ipsum */
+.lorum-ipsum {
+    .lorum-box {
+        float: $float-left;
+            width: (94%/3);
+            &:not(:last-of-type) {
+            margin-right: 3%;
+            }
+        @media #{$maxMobile} {
+            width: 100%;
+            text-align: center;
+            &:not(:last-of-type) {
+                margin-bottom: 40px;
+            }
+        }
+        @media #{$minSmall} {
+            width: 94%;
+            text-align: center;
+            &:not(:last-of-type) {
+                margin-bottom: 40px;
+            }
+        }
+        @media #{$minMedium} {
+            width: (94% / 2);
+            text-align: center;
+            &:not(:last-of-type) {
+                margin-bottom: 40px;
+            }
+            &:last-child {
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        @media #{$minLarge} {
+            width: (94% / 3);
+            text-align: center;
+            &:last-child {
+                position: relative;
+                left: 15.5%;
+                
+            }
+        }
+    }
+    .lorum-img {
+       max-width: 100%;   
+    }
+}
+/* end lorum ipsum */
+
+
